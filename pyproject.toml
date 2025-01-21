@@ -12,3 +12,22 @@ dependencies = [
     "pymongo>=4.10.1",
     "requests>=2.32.3",
 ]
+
+[tool.ruff.lint]
+fixable = ["F841", "E711", "E712"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"
+docstring-code-format = true
+line-ending = "auto"
+preview = true
+
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+]
